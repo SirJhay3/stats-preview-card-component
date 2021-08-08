@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/*Mobile Styling*/
+
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: hsl(233, 47%, 7%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+/*Image Styles*/
+.img-container {
+    width: 100%;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    position: absolute;
+    top: 0;
+    opacity: .5;
+}
+
+/*Stats Preview Styles*/
+.preview-container {
+    display: grid;
+    grid-gap: 20px;
+    padding: 2em;
+    min-height: 45vh;
+    background: hsl(244, 38%, 16%);
+}
+
+.preview-header {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.preview-paragraph {
+    text-align: center;
+    line-height: 1.5em;
+    font-family: 'Lexand Deca';
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/*Main Stats Styles*/
+.stats {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.stats h2 {
+    font-family: 'Inter';
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .4em;
+    color: hsl(0, 0%, 100%);
+}
+
+.stats p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+    font-family: 'Lexand Deca';
+    text-align: center;
+}
+
+/*Special Styles*/
+span {
+    color: hsl(277, 64%, 61%)
+}
+
+/*Laptop Screens */
+@media screen and (min-width: 1024px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+    }
+    .img-container {
+        order: 2;
+    }
+    /*Stats Preview Styles*/
+    .preview-container {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 3em;
+        grid-gap: 20px;
+        height: auto;
+    }
+    .preview-header {
+        text-align: left;
+    }
+    .preview-paragraph {
+        text-align: left;
+        width: 90%;
+    }
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        align-items: flex-end;
+    }
+    .stats h2 {
+        text-align: left;
+    }
+    .stats p {
+        text-align: left;
+    }
+}
