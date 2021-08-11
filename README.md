@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/SirJhay3/stats-preview-card-component
-- Live Site URL: https://sirjhay3.github.io/stats-preview-card-component/
+- Live Site URL: https://thirsty-blackwell-5c343e.netlify.app/
 
 ## My process
 
